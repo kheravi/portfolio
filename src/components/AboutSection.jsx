@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { BeakerIcon, Briefcase, Code, User } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -22,10 +22,10 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              I'm passionate about data science and programming, and I'm always
+              eager to apply my skills to new and exciting projects such as making
+              baseball sites, game applications, and sports research papers in addition
+              to my data science work.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -47,13 +47,16 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <BeakerIcon className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Data Science</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    With research published in top-tier journals, I excel in
+                    extracting insights from complex datasets using causal inference.
+                    Going one step beyond tradiditional data analysis, I seek to
+                    find explainability, data sensitivity, and trustworthiness in my 
+                    models.
                   </p>
                 </div>
               </div>
@@ -61,13 +64,15 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">Software Programming</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Proficient in multiple programming languages including Python,
+                    Java, SQL, I have taught for over 3 years at university/college level 
+                    and built various applications ranging from web development to
+                    data-driven solutions.
                   </p>
                 </div>
               </div>
@@ -81,8 +86,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Leading projects and teams to success in my team as a researcher
+                    and lead teaching assistant. I excel in coordinating efforts,
+                    managing timelines, and ensuring successful project delivery.
                   </p>
                 </div>
               </div>

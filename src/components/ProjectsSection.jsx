@@ -1,34 +1,34 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Youtube } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "DEMA: Enhancing Causal Analysis through Data Enrichment and Discovery in Data Lakes",
+    description: "A data pipeline that automates data enrichment and discovery in the context of causal learning. Accepted and published to VLDB Workshop TaDa 2024",
+    image: "src/assets/dema_logo.png",
+    tags: ["Causal Inference", "Data Discovery", "Double Machine Learning"],
+    paperUrl: "https://vldb.org/workshops/2024/proceedings/TaDA/TaDA.12.pdf",
+    demoUrl: "https://www.youtube.com/watch?v=pqNRdI26qHI",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Causal What-If and How-To Analysis Using HYPER",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
+      "The paper introduces HYPER, a method for answering what-if and how-to (i.e. counterfactual and intervention) analytic queries in complex data by unifying causal and structural modeling. Accepted and published to IEEE 2023",
+    image: "src/assets/hyper.png",
+    tags: ["Causal Inference", "Machine Learning", "Database","ETL","Flask"],
+    paperUrl: "https://par.nsf.gov/servlets/purl/10400605",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Who's on First: Interactive Batting Lineup Scenarios",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "An interactive web application that allows users to explore and visualize different baseball batting lineups using up to date MLB data.",
+    image: "/src/assets/baseballSite.png",
+    tags: ["React", "Node.js", "Vite", "Tailwind CSS"],
+    paperUrl: "https://whosonfirst.vercel.app/",
+
   },
 ];
 
@@ -42,8 +42,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -76,18 +75,18 @@ export const ProjectsSection = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
-                      href={project.demoUrl}
+                      href={project.paperUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
                     </a>
                     <a
-                      href={project.githubUrl}
+                      href={project.demoUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <Github size={20} />
+                      <Youtube size={20} />
                     </a>
                   </div>
                 </div>
@@ -100,7 +99,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/kheravi"
           >
             Check My Github <ArrowRight size={16} />
           </a>
