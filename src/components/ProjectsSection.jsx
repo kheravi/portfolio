@@ -21,7 +21,6 @@ const projects = [
     image: hyper,
     tags: ["Causal Inference", "Machine Learning", "Database","ETL","Flask"],
     paperUrl: "https://par.nsf.gov/servlets/purl/10400605",
-    githubUrl: "#",
   },
   {
     id: 3,
@@ -84,13 +83,16 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Youtube size={20} />
-                    </a>
+
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Youtube size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

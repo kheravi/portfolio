@@ -2,38 +2,50 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
+  // Programming & Data Handling
+  { name: "Python", level: 95, category: "programming" },
+  { name: "SQL", level: 90, category: "programming" },
+  { name: "Java", level: 85, category: "programming" },
+  { name: "C/C++", level: 80, category: "programming" },
+
+  // Data Science & Machine Learning
+  { name: "DoubleML", level: 95, category: "data science" },
+  { name: "pandas", level: 95, category: "data science" },
+  { name: "NumPy", level: 95, category: "data science" },
+  { name: "scikit-learn", level: 95, category: "data science" },
+  { name: "TensorFlow", level: 75, category: "data science" },
+  { name: "PyTorch", level: 75, category: "data science" },
+
+  // Databases & Backend
+  { name: "PostgreSQL", level: 80, category: "database" },
+  { name: "Oracle Database", level: 90, category: "database" },
+  { name: "MongoDB", level: 70, category: "database" },
+  { name: "Node.js", level: 80, category: "programming" },
+
+  // Data Visualization & Reporting
+  { name: "Tableau", level: 95, category: "visualization" },
+  { name: "Power BI", level: 80, category: "visualization" },
+  { name: "matplotlib", level: 85, category: "visualization" },
+  { name: "seaborn", level: 80, category: "visualization" },
+  { name: "Plotly", level: 80, category: "visualization" },
+
+  // Web & Frontend (for dashboards / interfaces)
   { name: "React", level: 90, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "Next.js", level: 80, category: "frontend" },
   { name: "Vite", level: 90, category: "frontend" },
-  
+  { name: "Unity", level: 80, category: "frontend" },
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Oracle Database", level: 90, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 80, category: "backend" },
-  { name: "Python", level: 95, category: "backend" },
-  { name: "Java", level: 85, category: "backend" },
-  { name: "C/C++", level: 80, category: "backend" },
-  { name: "SQL", level: 90, category: "backend" },
-  { name: "Unity", level: 80, category: "backend" },
-
-  // Data Visualization
-  { name: "Tableau", level: 95, category: "data visualization" },
-  { name: "Power BI", level: 80, category: "data visualization" },
-  { name: "matplotlib", level: 70, category: "data visualization" },
-
-  // Tools
+  // Tools & DevOps
   { name: "Git/GitHub", level: 95, category: "tools" },
   { name: "Docker", level: 70, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "data visualization", "tools"];
+
+const categories = ["all", "data science","programming", "database", "visualization", "tools"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
