@@ -1,11 +1,14 @@
 import { ArrowRight, ExternalLink, Github, Youtube } from "lucide-react";
+import baseballSite from "../assets/baseballSite.png";
+import dema_logo from "../assets/dema_logo.png";
+import hyper from "../assets/hyper.png";
 
 const projects = [
   {
     id: 1,
     title: "DEMA: Enhancing Causal Analysis through Data Enrichment and Discovery in Data Lakes",
     description: "A data pipeline that automates data enrichment and discovery in the context of causal learning. Accepted and published to VLDB Workshop TaDa 2024",
-    image: "src/assets/dema_logo.png",
+    image: dema_logo,
     tags: ["Causal Inference", "Data Discovery", "Double Machine Learning"],
     paperUrl: "https://vldb.org/workshops/2024/proceedings/TaDA/TaDA.12.pdf",
     demoUrl: "https://www.youtube.com/watch?v=pqNRdI26qHI",
@@ -15,7 +18,7 @@ const projects = [
     title: "Causal What-If and How-To Analysis Using HYPER",
     description:
       "The paper introduces HYPER, a method for answering what-if and how-to (i.e. counterfactual and intervention) analytic queries in complex data by unifying causal and structural modeling. Accepted and published to IEEE 2023",
-    image: "src/assets/hyper.png",
+    image: hyper,
     tags: ["Causal Inference", "Machine Learning", "Database","ETL","Flask"],
     paperUrl: "https://par.nsf.gov/servlets/purl/10400605",
     githubUrl: "#",
@@ -25,7 +28,7 @@ const projects = [
     title: "Who's on First: Interactive Batting Lineup Scenarios",
     description:
       "An interactive web application that allows users to explore and visualize different baseball batting lineups using up to date MLB data.",
-    image: "/src/assets/baseballSite.png",
+    image: baseballSite,
     tags: ["React", "Node.js", "Vite", "Tailwind CSS"],
     paperUrl: "https://whosonfirst.vercel.app/",
 
